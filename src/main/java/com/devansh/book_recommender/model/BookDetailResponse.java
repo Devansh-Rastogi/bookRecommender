@@ -1,5 +1,7 @@
 package com.devansh.book_recommender.model;
 
+import com.devansh.book_recommender.entity.Book;
+import com.devansh.book_recommender.entity.Review;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.domain.Page;

@@ -1,9 +1,9 @@
 package com.devansh.book_recommender.service.impl;
 
+import com.devansh.book_recommender.entity.Book;
+import com.devansh.book_recommender.entity.Review;
 import com.devansh.book_recommender.exception.ReviewIdInvalidException;
 import com.devansh.book_recommender.exception.ReviewNotFoundException;
-import com.devansh.book_recommender.model.Book;
-import com.devansh.book_recommender.model.Review;
 import com.devansh.book_recommender.model.ReviewRequest;
 import com.devansh.book_recommender.repository.ReviewRepository;
 import com.devansh.book_recommender.service.ReviewService;

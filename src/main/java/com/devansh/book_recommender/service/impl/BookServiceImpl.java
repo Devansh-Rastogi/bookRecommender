@@ -1,10 +1,10 @@
 package com.devansh.book_recommender.service.impl;
 
+import com.devansh.book_recommender.entity.Book;
+import com.devansh.book_recommender.entity.Review;
 import com.devansh.book_recommender.exception.BookIdInvalidException;
 import com.devansh.book_recommender.exception.BookNotFoundException;
-import com.devansh.book_recommender.model.Book;
 import com.devansh.book_recommender.model.BookDetailResponse;
-import com.devansh.book_recommender.model.Review;
 import com.devansh.book_recommender.repository.BookRepository;
 import com.devansh.book_recommender.repository.ReviewRepository;
 import com.devansh.book_recommender.service.BookService;

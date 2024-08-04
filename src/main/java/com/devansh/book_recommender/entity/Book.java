@@ -1,4 +1,4 @@
-package com.devansh.book_recommender.model;
+package com.devansh.book_recommender.entity;
 
 import lombok.Getter;
 import lombok.Setter;

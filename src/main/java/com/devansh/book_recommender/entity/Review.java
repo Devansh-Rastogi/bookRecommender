@@ -1,4 +1,4 @@
-package com.devansh.book_recommender.model;
+package com.devansh.book_recommender.entity;
 
 import com.mongodb.lang.NonNull;
 import lombok.Getter;

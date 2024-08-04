@@ -6,6 +6,7 @@ import com.devansh.book_recommender.exception.ReviewIdInvalidException;
 import com.devansh.book_recommender.exception.ReviewNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -30,5 +31,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ReviewIdInvalidException.class)
     public ResponseEntity<String> handleReviewIdInvalidException(ReviewIdInvalidException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(UsernameNotFoundException.class)
+    public ResponseEntity<String> handleUsernameNotFoundException(UsernameNotFoundException e){
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.FORBIDDEN);
     }
 }

@@ -1,11 +1,11 @@
 package com.devansh.book_recommender.controller;
 
+import com.devansh.book_recommender.entity.Book;
+import com.devansh.book_recommender.entity.Review;
 import com.devansh.book_recommender.exception.BookIdInvalidException;
 import com.devansh.book_recommender.exception.BookNotFoundException;
 import com.devansh.book_recommender.exception.ReviewIdInvalidException;
 import com.devansh.book_recommender.exception.ReviewNotFoundException;
-import com.devansh.book_recommender.model.Book;
-import com.devansh.book_recommender.model.Review;
 import com.devansh.book_recommender.model.ReviewRequest;
 import com.devansh.book_recommender.service.BookService;
 import com.devansh.book_recommender.service.ReviewService;
@@ -69,7 +69,7 @@ public class ReviewController {
         try {
             reviewService.deleteReview(reviewId);
             return ResponseEntity.noContent().build();
-        }catch (Exception e){
+        } catch (Exception e) {
             return new ResponseEntity<>("Error while deleting the review : " + reviewId, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

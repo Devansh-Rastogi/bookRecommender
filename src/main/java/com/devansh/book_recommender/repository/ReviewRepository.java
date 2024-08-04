@@ -1,6 +1,6 @@
 package com.devansh.book_recommender.repository;
 
-import com.devansh.book_recommender.model.Review;
+import com.devansh.book_recommender.entity.Review;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
